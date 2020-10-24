@@ -16,9 +16,9 @@ class UserManager: ObservableObject {
     
     init() {
         if let reg = storage.value(forKey: "Registration") as? Bool{
-            self.isRegister = reg
+            isRegister = reg
         } else {
-            self.isRegister = false
+            isRegister = false
         }
     }
     
